@@ -1,14 +1,18 @@
 services:
-  nextjs:
-    build: .
-    container_name: nextjs
-  
-  nginx:
-    image: nginx:alpine
-    container_name: nginx
+  app:
+    image: node:16
+    container_name: landing_app
+    working_dir: /app
+    volumes:
+      - ./:/app
     ports:
       - "3003:3003"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-    depends_on:
-      - nextjs
+    environment:
+      NEXT_TELEMETRY_DISABLED: '1'
+    command: sh -c "npm install && npm run dev"
+    restart: on-failure
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "512M"
