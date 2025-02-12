@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "3001:3001"
+      - "3003:3003"
     command: sh -c "npm install && npm run dev"
     depends_on:
       - db
