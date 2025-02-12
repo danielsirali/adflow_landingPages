@@ -3,8 +3,8 @@ import React, { useEffect, useState, useRef } from "react";
 
 export default function Nav() {
   const [loading, setLoading] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const mobileMenuRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
