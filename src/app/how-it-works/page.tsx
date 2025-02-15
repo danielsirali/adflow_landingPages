@@ -10,7 +10,6 @@ export default function HowItWorks() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -43,257 +42,199 @@ export default function HowItWorks() {
   return (
     <>
       <MainNav />
-      <div className="bg-red-50">
-        <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
-          <h1 className="font-semibold text-white text-5xl md:text-6xl">
-            <span className="text-red-600">How It Works:</span>
-            <span className="text-gray-800">
-              Transforming ideas into reality
-            </span>
-          </h1>
-          <div className="max-w-4xl">
-            <p className="mt-5 text-neutral-400 text-lg">
-              It is a creative hub where imagination meets craftsmanship to
-              transform ideas into tangible realities. At Preline Agency, we
-              specialize in turning conceptual visions into concrete forms,
-              whether it be through design, artistry, or technological
-              innovation.
+      <section className="max-w-6xl mx-auto px-2">
+        <div className="mt-20 flex flex-col md:flex-row items-start justify-between gap-8">
+          <div className="md:w-1/2">
+            <p className="text-gray-500 uppercase font-semibold text-sm">
+              How It Works
+            </p>
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Ad Booking, Simplified In 4 Easy Steps
+            </h2>
+
+            <div className="mt-10 grid grid-cols-1 gap-8">
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
+                  <img
+                    src="/images/sign_up_vector.png"
+                    alt="Adflow dashboard interface showcasing analytics and booking management."
+                    className="object-cover rounded-lg w-5"
+                  />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-bold text-gray-500">
+                    Step 1: Sign Up & Create Profile
+                  </h3>
+                  <p className="text-gray-600">
+                    Register as an advertiser or media house.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
+                  <img
+                    src="/images/browse_vector.png"
+                    alt="Adflow dashboard interface showcasing analytics and booking management."
+                    className="object-cover  w-4"
+                  />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-bold text-gray-500">
+                    Step 2: Browse & Discover Slots
+                  </h3>
+                  <p className="text-gray-600">
+                    Use filters to find the perfect slots based on your target
+                    audience and budget.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
+                  <img
+                    src="/images/upload_vector.png"
+                    alt="Adflow dashboard interface showcasing analytics and booking management."
+                    className="object-cover rounded-lg w-5"
+                  />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-bold text-gray-500">
+                    Step 3: Book & Upload Your Ad
+                  </h3>
+                  <p className="text-gray-600">
+                    Secure your slot, upload your creative material, and
+                    schedule your campaign.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
+                  <img
+                    src="/images/track_perfomance.png"
+                    alt="Adflow dashboard interface showcasing analytics and booking management."
+                    className=" rounded-lg w-5"
+                  />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-bold text-gray-500">
+                    Step 4: Track Performance in Real-Time
+                  </h3>
+                  <p className="text-gray-600">
+                    Access detailed analytics to measure the success of your
+                    campaigns.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:w-1/2">
+            <img
+              src="/images/color_background.png"
+              alt="Adflow steps illustration"
+              className="object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-red-50 py-12 px-6 mr-10 ml-10 rounded-lg">
+        <div className="px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Ready to Elevate Your Advertising Strategy?
+            </h2>
+            <p className="text-black mb-6 text-sm">
+              Fill out the form below with your details and questions about our
+              innovative media buying platform. We will review your inquiry and
+              get back to you promptly with the information you need to
+              transform your ad campaigns.
+            </p>
+            <h3 className="text-xl font-semibold text-black mb-4">
+              Book your free consultation
+            </h3>
+
+            <div className="bg-transparent border border-gray-300 rounded-lg p-6">
+              <form>
+                <div className="mb-4">
+                  <label
+                    className="block text-left text-gray-700 font-medium"
+                    htmlFor="name"
+                  >
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                <div className="mb-4">
+                  <label
+                    className="block text-left text-gray-700 font-medium"
+                    htmlFor="email"
+                  >
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                <div className="mb-4">
+                  <label
+                    className="block text-left text-gray-700 font-medium"
+                    htmlFor="user-type"
+                  >
+                    I am a
+                  </label>
+                  <select
+                    id="user-type"
+                    className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  >
+                    <option>Advertiser</option>
+                    <option>Media House</option>
+                  </select>
+                </div>
+
+                <div className="mb-4">
+                  <label
+                    className="block text-left text-gray-700 font-medium"
+                    htmlFor="message"
+                  >
+                    Additional Information
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    placeholder="Message"
+                    className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#F20519] text-white h-10 flex items-center justify-center py-3 border border-red-500 rounded-md font-semibold hover:bg-red-700 transition"
+                >
+                  Send message
+                </button>
+              </form>
+            </div>
+
+            <p className="mt-6 text-black text-sm font-bold">
+              Don’t wait—take the first step toward a smarter, more efficient
+              advertising experience with Adflow!
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
-        <div className="grid md:grid-cols-5 gap-10">
-          <div className="md:col-span-2">
-            <div className="max-w-xs">
-              <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-red-600">
-                Frequently
-                <br />
-                asked questions
-              </h2>
-              <p className="mt-1 hidden md:block text-gray-600 dark:text-neutral-400">
-                Answers to the most frequently asked questions.
-              </p>
-            </div>
-          </div>
-
-          <div className="md:col-span-3">
-            <div className="hs-accordion-group divide-y divide-gray-200 dark:divide-neutral-700">
-              <div
-                className="hs-accordion pb-3 active"
-                id="hs-basic-with-title-and-arrow-stretched-heading-one"
-              >
-                <button
-                  className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500"
-                  aria-expanded="true"
-                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
-                >
-                  Can I cancel at anytime?
-                  <svg
-                    className="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                  <svg
-                    className="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m18 15-6-6-6 6" />
-                  </svg>
-                </button>
-                <div
-                  id="hs-basic-with-title-and-arrow-stretched-collapse-one"
-                  className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                  role="region"
-                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
-                >
-                  <p className="text-gray-600 dark:text-neutral-400">
-                    Yes, you can cancel anytime no questions are asked while you
-                    cancel but we would highly appreciate if you will give us
-                    some feedback.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="hs-accordion pt-6 pb-3"
-                id="hs-basic-with-title-and-arrow-stretched-heading-two"
-              >
-                <button
-                  className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
-                  aria-expanded="false"
-                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
-                >
-                  My team has credits. How do we use them?
-                  <svg
-                    className="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                  <svg
-                    className="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m18 15-6-6-6 6" />
-                  </svg>
-                </button>
-                <div
-                  id="hs-basic-with-title-and-arrow-stretched-collapse-two"
-                  className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  role="region"
-                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
-                >
-                  <p className="text-gray-600 dark:text-neutral-400">
-                    Once your team signs up for a subscription plan. This is
-                    where we sit down, grab a cup of coffee and dial in the
-                    details.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="hs-accordion pt-6 pb-3"
-                id="hs-basic-with-title-and-arrow-stretched-heading-three"
-              >
-                <button
-                  className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
-                  aria-expanded="false"
-                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
-                >
-                  How does Preline's pricing work?
-                  <svg
-                    className="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                  <svg
-                    className="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m18 15-6-6-6 6" />
-                  </svg>
-                </button>
-                <div
-                  id="hs-basic-with-title-and-arrow-stretched-collapse-three"
-                  className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  role="region"
-                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
-                >
-                  <p className="text-gray-600 dark:text-neutral-400">
-                    Our subscriptions are tiered. Understanding the task at hand
-                    and ironing out the wrinkles is key.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="hs-accordion pt-6 pb-3"
-                id="hs-basic-with-title-and-arrow-stretched-heading-four"
-              >
-                <button
-                  className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
-                  aria-expanded="false"
-                  aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
-                >
-                  How secure is Preline?
-                  <svg
-                    className="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                  <svg
-                    className="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m18 15-6-6-6 6" />
-                  </svg>
-                </button>
-                <div
-                  id="hs-basic-with-title-and-arrow-stretched-collapse-four"
-                  className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  role="region"
-                  aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
-                >
-                  <p className="text-gray-600 dark:text-neutral-400">
-                    Protecting the data you trust to Preline is our first
-                    priority. This part is really crucial in keeping the project
-                    in line to completion.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -36,19 +36,19 @@ export default function Nav() {
   }
 
   return (
-    <nav className="flex justify-between items-center px-6 relative z-10">
+    <nav className="flex justify-between items-center px-10 mr-40 relative z-10">
       <div className="text-2xl font-bold lg:ml-24">
         <div className="w-full py-4">
           <img
             src="/images/adflow_logo.png"
             alt="Adflow Logo"
-            className="w-24 py-4 object-cover"
+            className="w-28 py-4 object-cover"
           />
         </div>
       </div>
 
-      <div className="flex justify-between items-center space-x-10 mr-28 text-white text-md hidden md:flex">
-        <div className="flex space-x-16">
+      <div className="flex justify-between items-center text-bold space-x-10 text-white text-md hidden md:flex">
+        <div className="flex space-x-16 font-bold text-sm">
           <Link href="/" className="hover:text-black">
             Home
           </Link>
@@ -64,11 +64,11 @@ export default function Nav() {
         </div>
 
         <Link href="/auth/register">
-          <div className="bg-white text-red-600 px-4 py-2 mr-8 border border-red-600 rounded-md hover:bg-red-600">
+          <div className="bg-white text-red-600 px-4 py-2 mr-8 text-sm font-bold border-none rounded-md hover:bg-red-600">
             Sign up
           </div>
         </Link>
-        <span className="text-white">EN ▾</span>
+        <span className="text-white font-bold text-sm">EN ▾</span>
       </div>
 
       <div className="md:hidden flex items-center p-2">
@@ -83,7 +83,7 @@ export default function Nav() {
       {isMobileMenuOpen && (
         <div
           ref={mobileMenuRef}
-          className="absolute top-0 left-0 w-full h-screen rounded-lg bg-red-50 bg-opacity-90 flex flex-col items-center justify-center space-y-6 md:hidden"
+          className="absolute top-0 left-0 w-full h-60 rounded-lg bg-white flex flex-col items-center justify-center space-y-6 md:hidden"
         >
           <Link
             href="#"

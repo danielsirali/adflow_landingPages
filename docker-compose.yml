@@ -1,7 +1,14 @@
 services:
   app:
-    image: node:18.17.0-alpine
+    build:
+      context: .
+      dockerfile: DockerFile
     container_name: landing_app
     restart: on-failure
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
