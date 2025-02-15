@@ -1,5 +1,5 @@
-# Build stage
-FROM node:20.0.0-alpine AS final
+# Use a compatible Node.js version for Next.js
+FROM node:20.0.0-alpine AS builder
 
 WORKDIR /app
 
@@ -10,6 +10,13 @@ RUN npm install
 COPY . .
 
 RUN npm run build
+
+# Use a smaller base image for the final build
+FROM node:20.0.0-alpine AS final
+
+WORKDIR /app
+
+COPY --from=builder /app ./
 
 EXPOSE 3000
 
