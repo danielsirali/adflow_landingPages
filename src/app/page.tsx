@@ -1,6 +1,5 @@
 "use client";
 
-
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
@@ -14,14 +13,14 @@ const Home = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-const handleClickOutside = (event: MouseEvent) => {
-  if (
-    mobileMenuRef.current &&
-    !mobileMenuRef.current.contains(event.target as Node)
-  ) {
-    setIsMobileMenuOpen(false);
-  }
-};
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      mobileMenuRef.current &&
+      !mobileMenuRef.current.contains(event.target as Node)
+    ) {
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -45,31 +44,41 @@ const handleClickOutside = (event: MouseEvent) => {
       <img
         src="/images/decore.png"
         alt="Decorative Image"
-        className="absolute right-0 top-0 z-0 object-cover h-32 w-32 sm:h-48 sm:w-48 lg:h-full lg:w-auto"
-        style={{ marginLeft: "10px", marginTop: "0px" }}
+        className="absolute right-0 top-0 z-0 object-cover"
+        style={{
+          width: "800px",
+          height: "800px",
+          marginLeft: "10px",
+          marginTop: "0px",
+        }}
       />
 
       <section className="relative">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6">
+        <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6">
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold leading-tight text-black">
+            <h1 className="text-6xl font-bold  leading-tight text-black">
               Run <span className="text-red-500">ads</span> your <br />
-              <span className="text-red-500"> audience</span> cares <br /> about
+              <span className="text-red-500"> audience</span> cares about
             </h1>
-            <p className="mt-4 text-gray-600">
-              Adflow makes buying airtime on radio and television more seamless
-              than ever, allowing you to focus on reaching your target faster.
+            <p className="mt-4 text-gray-600 text-sm">
+              Adflow is your all-in-one marketplace for buying and selling
+              airtime on radio and television. Whether you're an advertiser
+              eager to connect with your ideal audience or a media house looking
+              to optimize your inventory, Adflow simplifies the process—helping
+              you focus on what truly matters: reaching your target faster and
+              smarter.
             </p>
-            <button className="mt-6 bg-red-500 text-white border border-red-600 px-6 py-3 rounded-md font-medium hover:bg-red-600">
+            <button className="mt-6 h-10 bg-red-500 text-sm text-white flex items-center justify-center border border-red-600 px-6 py-3 rounded-md font-bold hover:bg-red-600 mx-auto lg:mx-0">
               Get Started
             </button>
           </div>
+
           <div className="md:w-1/2 relative md:mt-0">
             <div className="right-0 w-full bg-red-500"></div>
             <img
               src="/images/adflow_pic_5.png"
               alt="Woman holding a retro TV"
-              className="h-98 w-86"
+              className="h-98 w-86 sm:24"
             />
           </div>
         </div>
@@ -142,14 +151,14 @@ const handleClickOutside = (event: MouseEvent) => {
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-center">
               <span className="text-red-500">About</span> The Platform
             </h2>
-            <p className="mt-4 text-gray-600 text-md md:text-left">
+            <p className="mt-4 text-gray-600 text-sm md:text-left">
               Adflow is a cutting-edge, centralized platform designed to
               revolutionize how advertisers and media houses in Tanzania
               connect, book, and manage ad slots. It bridges the gap between
               brands looking for the perfect advertising opportunities and media
               houses seeking to maximize the value of their ad inventory.
             </p>
-            <p className="mt-4 text-gray-600 text-md md:text-left">
+            <p className="mt-4 text-gray-600 text-sm md:text-left">
               With Adflow, advertisers can effortlessly discover, compare, and
               book available ad slots across multiple media channels—TV, radio,
               print, digital, and outdoor—all from one intuitive dashboard.
@@ -159,146 +168,8 @@ const handleClickOutside = (event: MouseEvent) => {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col md:flex-row items-start justify-between gap-8">
-          <div className="md:w-1/2">
-            <p className="text-gray-500 uppercase font-semibold text-sm">
-              How It Works
-            </p>
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Ad Booking, Simplified In 4 Easy Steps
-            </h2>
-
-            <div className="mt-10 grid grid-cols-1 gap-8">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/images/sign_up_vector.png"
-                    alt="Adflow dashboard interface showcasing analytics and booking management."
-                    className="object-cover rounded-lg w-5"
-                  />
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-bold text-gray-500">
-                    Step 1: Sign Up & Create Profile
-                  </h3>
-                  <p className="text-gray-600">
-                    Register as an advertiser or media house.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/images/browse_vector.png"
-                    alt="Adflow dashboard interface showcasing analytics and booking management."
-                    className="object-cover  w-4"
-                  />
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-bold text-gray-500">
-                    Step 2: Browse & Discover Slots
-                  </h3>
-                  <p className="text-gray-600">
-                    Use filters to find the perfect slots based on your target
-                    audience and budget.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/images/upload_vector.png"
-                    alt="Adflow dashboard interface showcasing analytics and booking management."
-                    className="object-cover rounded-lg w-5"
-                  />
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-bold text-gray-500">
-                    Step 3: Book & Upload Your Ad
-                  </h3>
-                  <p className="text-gray-600">
-                    Secure your slot, upload your creative material, and
-                    schedule your campaign.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-red-500 text-red-500 flex items-center justify-center rounded-lg">
-                  <img
-                    src="/images/track_perfomance.png"
-                    alt="Adflow dashboard interface showcasing analytics and booking management."
-                    className=" rounded-lg w-5"
-                  />
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-bold text-gray-500">
-                    Step 4: Track Performance in Real-Time
-                  </h3>
-                  <p className="text-gray-600">
-                    Access detailed analytics to measure the success of your
-                    campaigns.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:w-1/2">
-            <img
-              src="/images/color_background.png"
-              alt="Adflow steps illustration"
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </div>
       </div>
 
-      <section className="max-w-7xl mx-auto px-2">
-        <h3 className="text-gray-500 font-semibold text-sm">Testimonials</h3>
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8">
-          <div className="md:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-2">
-              Trusted By Leading <br /> Advertisers And Media <br /> Houses
-            </h2>
-          </div>
-
-          <div className="md:w-1/2 mt-8 md:mt-0 relative">
-            <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 relative z-10">
-              <div className="flex items-start">
-                <img
-                  src="/images/person_image.png"
-                  alt="Smiling man profile picture"
-                  className="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white shadow-lg -mt-8"
-                />
-              </div>
-              <p className="text-gray-600 text-lg mt-2">
-                “Adflow transformed how we manage our ad inventory— bookings
-                have doubled, and revenue is up by 30%!”
-              </p>
-              <div className="mt-4">
-                <p className="font-semibold text-gray-900">John Doe</p>
-                <p className="text-gray-500 text-sm">
-                  Marketing Director at XYZ Media
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute top-20 left-6 md:left-10 w-full md:w-11/12 bg-white shadow-md rounded-lg p-6 opacity-50">
-              <p className="font-semibold text-gray-900">Chris Thomas</p>
-              <p className="text-gray-500 text-sm">CEO of Red Button</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 flex space-x-2">
-          <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-        </div>
-      </section>
 
       <section className="w-full max-w-6xl mx-auto px-6 py-10">
         <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16">
