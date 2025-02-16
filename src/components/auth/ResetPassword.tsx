@@ -10,13 +10,13 @@ export default function ResetForm() {
         <input
           type="email"
           id="email"
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-full shadow-sm"
+          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm"
           placeholder="admin@admin.com"
         />
       </div>
       <button
         type="submit"
-        className="w-full py-1 bg-[#037073] text-white rounded-full shadow-md hover:bg-[#037073]"
+        className="w-full py-1 bg-red-500 text-white rounded-lg boreder border-red-500 hover:bg-black"
       >
         Submit
       </button>

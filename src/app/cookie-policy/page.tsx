@@ -3,6 +3,7 @@
 import MainNav from "@/components/MainNav";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
+import Footer from "@/components/Footer";
 
 export default function CookiePolicy() {
   const [loading, setLoading] = useState(false);
@@ -114,6 +115,7 @@ export default function CookiePolicy() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

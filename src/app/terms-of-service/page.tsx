@@ -3,6 +3,7 @@
 import MainNav from "@/components/MainNav";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
+import Footer from "@/components/Footer"; 
 
 export default function TermsofService() {
   const [loading, setLoading] = useState(false);
@@ -41,7 +42,6 @@ export default function TermsofService() {
   return (
     <>
       <MainNav />
-
       <section className="max-w-6xl mx-auto bg-white text-black p-6 rounded-lg ">
         <h1 className="text-xl text-center  text-black font-semibold pb-4">
           Terms of Service
@@ -83,6 +83,7 @@ export default function TermsofService() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

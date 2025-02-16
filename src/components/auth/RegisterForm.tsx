@@ -139,7 +139,7 @@ export default function RegisterForm() {
           type="text"
           name="fullName"
           id="fullName"
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm"
+          className="w-full mt-1 px-4 py-2 border text-black border-gray-300 bg-white rounded-lg shadow-sm"
           placeholder="Your full name"
           value={formData.fullName}
           onChange={handleInputChange}
@@ -153,7 +153,7 @@ export default function RegisterForm() {
           type="email"
           name="email"
           id="email"
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm"
+          className="w-full mt-1 px-4 py-2 border text-black border-gray-300 bg-white rounded-lg shadow-sm"
           placeholder="admin@admin.com"
           value={formData.email}
           onChange={handleInputChange}
@@ -167,7 +167,7 @@ export default function RegisterForm() {
         <select
           name="accountType"
           value={formData.accountType}
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white
+          className="w-full mt-1 px-4 py-2 border text-black border-gray-300 bg-white
           rounded-lg shadow-sm"
           onChange={handleSelectChange}
         >
@@ -187,7 +187,7 @@ export default function RegisterForm() {
           type="password"
           name="password"
           id="password"
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:outline-none"
+          className="w-full mt-1 px-4 py-2 border text-black border-gray-300 bg-white rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:outline-none"
           value={formData.password}
           onChange={handleInputChange}
         />
@@ -200,21 +200,21 @@ export default function RegisterForm() {
           type="password"
           name="confirmPassword"
           id="confirmPassword"
-          className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:outline-none"
+          className="w-full mt-1 px-4 py-2 border text-black border-gray-300 bg-white rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:outline-none"
           value={formData.confirmPassword}
           onChange={handleInputChange}
         />
       </div>
       <button
         type="submit"
-        className="w-full py-1 bg-[#F20519] text-white border border-[#F20519] rounded-lg shadow-md hover:bg-[#037073]"
+        className="w-full py-1 bg-[#F20519] text-white border border-[#F20519] rounded-lg shadow-md hover:bg-black"
       >
         Sign Up
       </button>
       <p className="text-center text-sm text-black">
         Already have an account?{" "}
         <Link href="/auth/login">
-          <span className="text-secondary hover:underline">Log In</span>
+          <span className="text-red-500 hover:underline">Log In</span>
         </Link>
       </p>
       <div className="flex items-center space-x-2">
