@@ -96,47 +96,47 @@ export default function Nav() {
         </div>
 
         {isMobileMenuOpen && (
-          <div
-            ref={mobileMenuRef}
-            className="absolute top-0 left-0 w-full h-60 rounded-lg bg-white flex flex-col items-center justify-center space-y-6 md:hidden"
+        <div
+          ref={mobileMenuRef}
+          className="absolute top-0 left-0 w-full h-screen rounded-lg bg-red-50 bg-opacity-90 flex flex-col items-center justify-center space-y-6 md:hidden"
+        >
+          <Link
+            href="/"
+            className="text-red-500 cursor-pointer text-xl hover:text-black"
+            onClick={toggleMobileMenu}
           >
-            <Link
-              href="#"
-              className="text-red-500 cursor-pointer text-xl hover:text-black"
-              onClick={toggleMobileMenu}
-            >
-              Home
-            </Link>
-            <Link
-              href="#"
-              className="text-red-500 cursor-pointer text-xl hover:text-black"
-              onClick={toggleMobileMenu}
-            >
-              About Us
-            </Link>
-            <Link
-              href="#"
-              className="text-red-500 cursor-pointer text-xl hover:text-black"
-              onClick={toggleMobileMenu}
-            >
-              How it Works
-            </Link>
-            <Link
-              href="/auth/register"
-              className="text-red-500 cursor-pointer text-xl hover:text-black"
-              onClick={toggleMobileMenu}
-            >
-              Contact Us
-            </Link>
-            <button
-              className="bg-white text-red-600 px-4 py-2 border border-red-600 rounded-md hover:bg-red-600"
-              onClick={toggleMobileMenu}
-            >
-              Sign up
-            </button>
-            <span className="text-red-500 cursor-pointer text-xl">EN ▾</span>
-          </div>
-        )}
+            Home
+          </Link>
+          <Link
+            href="/about-us"
+            className="text-red-500 cursor-pointer text-xl hover:text-black"
+            onClick={toggleMobileMenu}
+          >
+            About Us
+          </Link>
+          <Link
+            href="/how-it-works"
+            className="text-red-500 cursor-pointer text-xl hover:text-black"
+            onClick={toggleMobileMenu}
+          >
+            How it Works
+          </Link>
+          <Link
+            href="/contact-us"
+            className="text-red-500 cursor-pointer text-xl hover:text-black"
+            onClick={toggleMobileMenu}
+          >
+            Contact Us
+          </Link>
+          <button
+            className="bg-white text-red-600 px-4 py-2 border border-red-600 rounded-md hover:bg-red-600"
+            onClick={toggleMobileMenu}
+          >
+            Sign up
+          </button>
+          <span className="text-red-500 cursor-pointer text-xl">EN ▾</span>
+        </div>
+      )}
       </nav>
     </>
   );

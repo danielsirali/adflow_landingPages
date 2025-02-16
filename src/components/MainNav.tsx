@@ -54,15 +54,7 @@ export default function MainNav() {
 
       <div className="flex justify-between items-center space-x-10 mr-28 text-black text-sm hidden md:flex">
         <div className="flex space-x-16 font-bold">
-          <Link
-            href="/"
-            className={`relative px-4 flex flex-row items-center focus:outline-none ${
-              isActive("/")
-                ? "text-red-500 underline underline-offset-8"
-                : "text-black hover:text-red-500"
-            }  pr-6`}
-            style={isActive("/") ? { color: "#F20519" } : {}}
-          >
+          <Link href="/" className="text-black">
             Home
           </Link>
           <Link
