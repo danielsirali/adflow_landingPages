@@ -1,6 +1,6 @@
-import LoginForm from "@/components/auth/LoginForm";
 import { Suspense } from "react";
 import Link from "next/link";
+import ResetForm from "@/components/auth/ResetPassword";
 
 export default function ForgotPassword() {
   return (
@@ -17,14 +17,14 @@ export default function ForgotPassword() {
         </div>
         <div className="flex flex-col items-center mt-10">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Welcome Back!
+            Reset Password
           </h1>
           <p className="text-black text-sm mb-8">
-            Empowering Your Next Career Move.
+           
           </p>
           <div className="w-full max-w-sm">
             <Suspense fallback={<div>Loading...</div>}>
-              <LoginForm />
+              <ResetForm  />
             </Suspense>
           </div>
         </div>

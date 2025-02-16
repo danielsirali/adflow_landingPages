@@ -2,6 +2,7 @@
 
 import MainNav from "@/components/MainNav";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 import React, { useEffect, useState, useRef } from "react";
 
 export default function PrivacyPolicy() {
@@ -113,6 +114,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

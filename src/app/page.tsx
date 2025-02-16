@@ -3,6 +3,9 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
+import Footer from "@/components/Footer";
+import CallToAction from "@/components/CallToAction";
+import MainCallToAction from "@/components/MainCallToAction";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -44,7 +47,7 @@ const Home = () => {
       <img
         src="/images/decore.png"
         alt="Decorative Image"
-        className="absolute right-0 top-0 z-0 object-cover"
+        className="absolute right-0 top-0 z-0 object-cover hidden md:block"
         style={{
           width: "800px",
           height: "800px",
@@ -53,12 +56,24 @@ const Home = () => {
         }}
       />
 
+      <img
+        src="/images/decore.png"
+        alt="Decorative Image"
+        className="absolute right-0 top-0 z-0 object-cover"
+        style={{
+          width: "400px",
+          height: "400px",
+          marginLeft: "0px",
+          marginTop: "0px",
+        }}
+      />
+
       <section className="relative">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6">
           <div className="md:w-1/2">
-            <h1 className="text-6xl font-bold  leading-tight text-black">
+            <h1 className="text-6xl font-bold leading-tight text-black text-center md:text-left">
               Run <span className="text-red-500">ads</span> your <br />
-              <span className="text-red-500"> audience</span> cares about
+              <span className="text-red-500">audience</span> cares about
             </h1>
             <p className="mt-4 text-gray-600 text-sm">
               Adflow is your all-in-one marketplace for buying and selling
@@ -133,43 +148,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-8">
-          <div className="">
-            <img
-              src="/images/adflow_dashboard.png"
-              alt="Adflow dashboard interface showcasing analytics and booking management."
-              className="object-cover rounded-lg w-full"
-            />
-          </div>
-          <div className="max-w-lg">
-            <p className="text-gray-500 uppercase font-semibold text-sm md:text-center">
-              Overview
-            </p>
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl md:text-center">
-              <span className="text-red-500">About</span> The Platform
-            </h2>
-            <p className="mt-4 text-gray-600 text-sm md:text-left">
-              Adflow is a cutting-edge, centralized platform designed to
-              revolutionize how advertisers and media houses in Tanzania
-              connect, book, and manage ad slots. It bridges the gap between
-              brands looking for the perfect advertising opportunities and media
-              houses seeking to maximize the value of their ad inventory.
-            </p>
-            <p className="mt-4 text-gray-600 text-sm md:text-left">
-              With Adflow, advertisers can effortlessly discover, compare, and
-              book available ad slots across multiple media channels—TV, radio,
-              print, digital, and outdoor—all from one intuitive dashboard.
-              Media houses, on the other hand, gain a powerful tool to manage
-              bookings, optimize pricing, and track ad performance in real time.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
+      </section> 
 
       <section className="w-full max-w-6xl mx-auto px-6 py-10">
         <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16">
@@ -210,177 +189,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <MainCallToAction />
 
-      <section className="w-full max-w-7xl mx-auto px-6 py-10">
-        <div className="relative bg-red-100 rounded-r-lg rounded-tl-[10rem] rounded-bl-lg p-16 flex flex-col items-center text-center shadow-lg overflow-hidden">
-          {/* Background Circles */}
-          <div className="absolute inset-0">
-            {/* Left-side overlapping circles */}
-            {[...Array(6)].map((_, i) => (
-              <div
-                key={`left-circle-${i}`}
-                className="absolute"
-                style={{
-                  top: `${10 + i * 5}px`,
-                  left: `${10 + i * 5}px`,
-                  width: `${180 - i * 20}px`,
-                  height: `${180 - i * 20}px`,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(220, 38, 38, 0.3)", // Tailwind `border-red-300 opacity-30`
-                }}
-              ></div>
-            ))}
-
-            {/* Right-side overlapping circles */}
-            {[...Array(6)].map((_, i) => (
-              <div
-                key={`right-circle-${i}`}
-                className="absolute"
-                style={{
-                  bottom: `${10 + i * 5}px`,
-                  right: `${10 + i * 5}px`,
-                  width: `${180 - i * 20}px`,
-                  height: `${180 - i * 20}px`,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(220, 38, 38, 0.3)",
-                }}
-              ></div>
-            ))}
-          </div>
-
-          {/* Heading */}
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-600 max-w-lg leading-relaxed">
-            Subscribe to get information, latest news and other interesting
-            offers about Adflow.
-          </h2>
-
-          {/* Input & Button */}
-          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full max-w-md">
-            <div className="relative w-full flex items-center">
-              <span className="absolute left-4 text-gray-500">
-                <i className="bx bx-envelope"></i>
-              </span>
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full py-2 pl-12 pr-4 rounded-lg shadow-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
-            <button className="bg-red-600 text-white py-2 px-8 rounded-lg font-semibold border border-red-700 hover:bg-red-700 transition">
-              Subscribe
-            </button>
-          </div>
-
-          {/* Floating Send Icon */}
-          <div className="absolute top-0 right-0 bg-red-600 w-12 h-12 flex items-center justify-center rounded-full shadow-lg">
-            <img
-              className="w-8 h-8 object-contain"
-              src="/images/kite_image.png"
-              alt="Send Icon"
-            />
-          </div>
-        </div>
-      </section>
-
-      <footer className="relative bg-white py-18 mt-16 px-6 md:px-16 lg:px-32">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start relative">
-          <div>
-            <img
-              src="/images/adflow_logo.png"
-              alt="Adflow Logo"
-              className="w-auto h-auto p-4 object-cover"
-            />
-            <p className="text-gray-500 mt-2 text-sm">
-              Making your media buying <br></br>experience simpler.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-10 mt-6 md:mt-0 space-x-16">
-            <div>
-              <h3 className="font-semibold text-black">Company</h3>
-              <ul className="mt-2 space-y-2 text-black text-sm">
-                <li>
-                  <Link href="#" className="text-black">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-black">
-                    Mobile
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-black">Contact</h3>
-              <ul className="mt-2 space-y-2 text-gray-500 text-sm">
-                <li>
-                  <Link href="#" className="text-black">
-                    Help
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-black">
-                    Press
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-black">
-                    Affiliates
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-black">More</h3>
-              <ul className="mt-2 space-y-2 text-gray-500 text-sm">
-                <li>
-                  <Link href="#" className="text-black">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-black">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex space-x-4 mt-6 md:mt-0">
-            <Link
-              href="#"
-              className="w-8 h-8 flex items-center justify-center border rounded-full text-gray-600 hover:text-black transition"
-            >
-              <i className="bx bxl-facebook"></i>
-            </Link>
-            <Link
-              href="#"
-              className="w-8 h-8 flex items-center justify-center border rounded-full text-gray-600 hover:text-black transition"
-            >
-              <i className="bx bxl-instagram"></i>
-            </Link>
-            <Link
-              href="#"
-              className="w-8 h-8 flex items-center justify-center border rounded-full text-gray-600 hover:text-black transition"
-            >
-              <i className="bx bxl-twitter"></i>
-            </Link>
-          </div>
-        </div>
-
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          Copyright © 2025, All rights reserved. Adflow
-        </div>
-        <img
-          src="/images/color_background.png"
-          alt="Red gradient background"
-          className="absolute bottom-0 right-0 top-0 w-80 h-96 pointer-events-none z-10 opacity-80"
-        />
-      </footer>
+      <Footer />
     </div>
   );
 };
