@@ -91,7 +91,7 @@ function MainNav() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "text-black",
+                                className: "text-black hover:text-red-500",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/MainNav.tsx",
@@ -956,21 +956,14 @@ function HowItWorks() {
                                     className: "mt-10 space-y-8",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start w-90",
+                                            className: "flex items-start w-full",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-16 h-12 bg-red-500 text-white flex items-center justify-center rounded-lg",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bx bx-user-plus text-2xl"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                        lineNumber: 57,
-                                                        columnNumber: 19
-                                                    }, this)
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                    className: "bx bx-user-circle text-xl text-white bg-red-500 rounded-lg p-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 56,
-                                                    columnNumber: 17
+                                                    lineNumber: 57,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "ml-4",
@@ -1004,17 +997,10 @@ function HowItWorks() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start w-90",
+                                            className: "flex items-start w-full",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-24 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bx bx-search-alt text-2xl"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 19
-                                                    }, this)
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                    className: "bx bxs-dashboard text-xl text-white bg-red-500 rounded-lg p-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
                                                     lineNumber: 71,
@@ -1028,7 +1014,7 @@ function HowItWorks() {
                                                             children: "Step 2: Browse & Discover Slots"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 75,
+                                                            lineNumber: 74,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,13 +1022,13 @@ function HowItWorks() {
                                                             children: "Effortlessly find the ad slots that perfectly match your target audience and budget, whether you’re on TV, radio, print, digital, or outdoor channels."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 78,
+                                                            lineNumber: 77,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 73,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
@@ -1052,31 +1038,24 @@ function HowItWorks() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start w-90",
+                                            className: "flex items-start w-full",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-32 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bx bx-upload text-2xl"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                        lineNumber: 88,
-                                                        columnNumber: 19
-                                                    }, this)
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                    className: "bx bx-upload text-xl text-white bg-red-500 rounded-lg p-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 86,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "ml-3",
+                                                    className: "ml-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "text-lg font-bold text-gray-500",
                                                             children: "Step 3: Book & Upload Your Ad"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 91,
+                                                            lineNumber: 89,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1084,36 +1063,29 @@ function HowItWorks() {
                                                             children: "Secure your ideal slot in just a few clicks. Upload your creative material and schedule your campaign with ease, so you can focus on delivering compelling messages to your audience."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 94,
+                                                            lineNumber: 92,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start w-90",
+                                            className: "flex items-start w-full",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-32 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bx bx-line-chart text-2xl"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                        lineNumber: 105,
-                                                        columnNumber: 19
-                                                    }, this)
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                    className: "bx bx-search-alt text-xl text-white bg-red-500 rounded-lg p-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 102,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1124,7 +1096,7 @@ function HowItWorks() {
                                                             children: "Step 4: Track Performance in Real-Time"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 108,
+                                                            lineNumber: 105,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1132,19 +1104,19 @@ function HowItWorks() {
                                                             children: "Monitor every campaign with our detailed analytics dashboard. Gain insights into performance metrics, adjust strategies on the fly, and ensure your ad spend delivers measurable results."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                            lineNumber: 111,
+                                                            lineNumber: 108,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 104,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/how-it-works/page.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, this)
                                     ]
@@ -1166,12 +1138,12 @@ function HowItWorks() {
                                     className: "object-cover rounded-lg"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/how-it-works/page.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 120,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/how-it-works/page.tsx",
-                                lineNumber: 122,
+                                lineNumber: 119,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1188,12 +1160,12 @@ function HowItWorks() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CallToAction$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/how-it-works/page.tsx",
-                lineNumber: 132,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/how-it-works/page.tsx",
-                lineNumber: 134,
+                lineNumber: 131,
                 columnNumber: 7
             }, this)
         ]

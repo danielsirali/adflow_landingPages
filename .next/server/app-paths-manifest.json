@@ -5,5 +5,7 @@
   "/auth/register/page": "app/auth/register/page.js",
   "/about-us/page": "app/about-us/page.js",
   "/how-it-works/page": "app/how-it-works/page.js",
-  "/contact-us/page": "app/contact-us/page.js"
+  "/contact-us/page": "app/contact-us/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/auth/otp/page": "app/auth/otp/page.js"
 }

@@ -52,10 +52,10 @@ export default function HowItWorks() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-8">
           <div className="">
             <div className="mt-10 space-y-8">
-              <div className="flex items-start w-90">
-                <div className="w-16 h-12 bg-red-500 text-white flex items-center justify-center rounded-lg">
-                  <i className="bx bx-user-plus text-2xl"></i>
-                </div>
+              <div className="flex items-start w-full">
+
+                  <i className="bx bx-user-circle text-xl text-white bg-red-500 rounded-lg p-3"></i>
+         
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-gray-500">
                     Step 1: Sign Up & Create Profile
@@ -67,10 +67,9 @@ export default function HowItWorks() {
                 </div>
               </div>
 
-              <div className="flex items-start w-90">
-                <div className="w-24 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg">
-                  <i className="bx bx-search-alt text-2xl"></i>
-                </div>
+              <div className="flex items-start w-full">
+                <i className="bx bxs-dashboard text-xl text-white bg-red-500 rounded-lg p-3"></i>
+
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-gray-500">
                     Step 2: Browse & Discover Slots
@@ -83,11 +82,10 @@ export default function HowItWorks() {
                 </div>
               </div>
 
-              <div className="flex items-start w-90">
-                <div className="w-32 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg">
-                  <i className="bx bx-upload text-2xl"></i>
-                </div>
-                <div className="ml-3">
+              <div className="flex items-start w-full">
+                <i className="bx bx-upload text-xl text-white bg-red-500 rounded-lg p-3"></i>
+
+                <div className="ml-4">
                   <h3 className="text-lg font-bold text-gray-500">
                     Step 3: Book & Upload Your Ad
                   </h3>
@@ -100,10 +98,9 @@ export default function HowItWorks() {
                 </div>
               </div>
 
-              <div className="flex items-start w-90">
-                <div className="w-32 h-10 bg-red-500 text-white flex items-center justify-center rounded-lg">
-                  <i className="bx bx-line-chart text-2xl"></i>
-                </div>
+              <div className="flex items-start w-full">
+                <i className="bx bx-search-alt text-xl text-white bg-red-500 rounded-lg p-3"></i>
+
                 <div className="ml-4">
                   <h3 className="text-lg font-bold text-gray-500">
                     Step 4: Track Performance in Real-Time

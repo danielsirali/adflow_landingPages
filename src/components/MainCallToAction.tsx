@@ -4,99 +4,114 @@ import React, { useEffect, useState, useRef } from "react";
 
 export default function MainCallToAction() {
   return (
-    <section className="bg-red-50 py-12 px-6 mr-10 ml-10 rounded-lg">
-      <div className="px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            Ready to Elevate Your Advertising Strategy?
+    <section className="max-w-6xl mx-auto my-10 p-10 bg-red-100 rounded-lg">
+      <div className="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Ready to elevate your media <br /> buying experience?
           </h2>
-          <p className="text-black mb-6 text-sm">
-            Fill out the form below with your details and questions about our
-            innovative media buying platform. We will review your inquiry and
-            get back to you promptly with the information you need to transform
-            your ad campaigns.
+          <p className="text-gray-700 text-sm mt-2">
+            Kindly fill this form with your details about your inquiries and we
+            will respond your inquiry shortly.
           </p>
-          <h3 className="text-xl font-semibold text-black mb-4">
-            Book your free consultation
-          </h3>
 
-          <div className="bg-transparent border border-gray-300 rounded-lg p-6">
-            <form>
+          <div className="border border-gray-400 p-6 rounded-lg mt-5">
+            <form action="#" method="POST">
               <div className="mb-4">
-                <label
-                  className="block text-left text-gray-700 font-medium"
-                  htmlFor="name"
-                >
-                  Full Name <span className="text-red-500">*</span>
+                <label className="block text-gray-700 font-medium">
+                  Full name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
-                  id="name"
                   placeholder="Name"
-                  className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 bg-red-100  py-2 mt-1 focus:ring-red-500"
                 />
               </div>
 
               <div className="mb-4">
-                <label
-                  className="block text-left text-gray-700 font-medium"
-                  htmlFor="email"
-                >
+                <label className="block text-gray-700 font-medium">
                   Email <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
-                  id="email"
                   placeholder="Email"
-                  className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 bg-red-100 py-2 mt-1 focus:ring-red-500"
                 />
               </div>
 
               <div className="mb-4">
-                <label
-                  className="block text-left text-gray-700 font-medium"
-                  htmlFor="user-type"
-                >
-                  I am a
+                <label className="block text-gray-700 font-medium">
+                  User type <span className="text-red-500">*</span>
                 </label>
-                <select
-                  id="user-type"
-                  className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md text-black focus:outline-none focus:ring-2 focus:ring-red-500"
-                >
+                <select className="w-full border border-gray-300 rounded-lg px-4 bg-red-100 py-2 mt-1 focus:ring-red-500">
                   <option>Advertiser</option>
                   <option>Media House</option>
-                  <option>Agency</option>
+                  <option>Media Agency</option>
                 </select>
               </div>
 
               <div className="mb-4">
-                <label
-                  className="block text-left text-gray-700 font-medium"
-                  htmlFor="message"
-                >
-                  Additional Information
+                <label className="block text-gray-700 font-medium">
+                  Additional information <span className="text-red-500">*</span>
                 </label>
                 <textarea
-                  id="message"
-                  rows={4}
+                  rows="4"
                   placeholder="Message"
-                  className="w-full px-4 py-2 border border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 bg-red-100 py-2 mt-1 focus:ring-red-500"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#F20519] text-white h-10 flex items-center justify-center py-3 border border-red-500 rounded-md font-semibold hover:bg-red-700 transition"
+                className="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-black"
               >
                 Send message
               </button>
             </form>
           </div>
+        </div>
 
-          <p className="mt-6 text-black text-sm font-bold">
-            Don’t wait—take the first step toward a smarter, more efficient
-            advertising experience with Adflow!
-          </p>
+        <div>
+          <h3 className="text-3xl font-bold text-gray-900">
+            Or call our offices
+          </h3>
+          <ul className="mt-6 space-y-10">
+            <li className="flex items-center space-x-4">
+              <i className="bx bx-envelope text-2xl text-red-600"></i>
+              <div>
+                <span className="text-gray-700 text-sm">Send an email</span>
+                <p className="text-gray-900 text-sm font-semibold">adflow@gmail.com</p>
+              </div>
+            </li>
+
+            <li className="flex items-center space-x-4">
+              <i className="bx bx-phone text-2xl text-red-600"></i>
+              <div>
+                <span className="text-gray-700 text-sm">Give us a call</span>
+                <p className="text-gray-900 text-sm font-semibold">0700000000</p>
+              </div>
+            </li>
+
+            <li className="flex items-center space-x-4">
+              <i className="bx bx-map text-2xl text-red-600"></i>
+              <div>
+                <span className="text-gray-700 text-sm">Office address</span>
+                <p className="text-gray-900 text-sm font-semibold">
+                  View park towers, Nairobi
+                </p>
+              </div>
+            </li>
+
+            <li className="flex items-center space-x-4">
+              <i className="bx bx-time text-2xl text-red-600"></i>
+              <div>
+                <span className="text-gray-700 text-sm">Working hours</span>
+                <p className="text-gray-900 text-sm font-semibold">
+                  Mon-Sat: 10am - 5pm
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
