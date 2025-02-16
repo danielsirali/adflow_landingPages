@@ -148,7 +148,52 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> 
+      </section>
+
+      <section className="bg-white px-6">
+        <div className="max-w-6xl flex flex-col md:flex-row mx-auto text-center">
+          <div className="md:w-1/2 text-left">
+            <h3 className="text-gray-500 font-semibold text-sm">
+              Testimonials
+            </h3>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-2">
+              Trusted By Leading <br /> Advertisers And Media <br /> Houses
+            </h2>
+            <div className="mt-6 flex space-x-2">
+              <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+              <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+            </div>
+          </div>
+
+          <div className="mt-8 md:w-1/2 relative">
+            <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 relative z-10">
+              <div className="flex items-start">
+                <img
+                  src="/images/person_image.png"
+                  alt="Smiling man profile picture"
+                  className="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white shadow-lg -mt-8"
+                />
+              </div>
+              <p className="text-gray-600 text-sm text-left mt-2">
+                “Adflow transformed how we manage our ad inventory— bookings
+                have doubled, and revenue is up by 30%!”
+              </p>
+              <div className="mt-4 text-left">
+                <p className="font-semibold text-gray-900">John Doe</p>
+                <p className="text-gray-500 text-sm">
+                  Marketing Director at XYZ Media
+                </p>
+              </div>
+            </div>
+
+            <div className="absolute top-20 left-6 md:left-10 w-full md:w-11/12 bg-white shadow-md rounded-lg p-6 opacity-50">
+              <p className="font-semibold text-gray-900">Chris Thomas</p>
+              <p className="text-gray-500 text-sm">CEO of Red Button</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="w-full max-w-6xl mx-auto px-6 py-10">
         <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16">

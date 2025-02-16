@@ -54,7 +54,7 @@ export default function MainNav() {
 
       <div className="flex justify-between items-center space-x-10 mr-28 text-black text-sm hidden md:flex">
         <div className="flex space-x-16 font-bold">
-          <Link href="/" className="text-black">
+          <Link href="/" className="text-black hover:text-red-500">
             Home
           </Link>
           <Link
