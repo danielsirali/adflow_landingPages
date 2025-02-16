@@ -47,10 +47,7 @@ export default function Contact() {
       <div className="bg-red-50 mb-20">
         <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
           <h1 className="font-semibold text-white text-5xl md:text-6xl">
-            <span className="text-red-600">Contact Us:</span>
-            <span className="text-gray-800">
-              Transforming ideas into reality
-            </span>
+            <span className="text-red-600">Contact Us</span>
           </h1>
         </div>
       </div>

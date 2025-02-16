@@ -42,7 +42,7 @@ export default function HowItWorks() {
   return (
     <>
       <MainNav />
-      <section className="max-w-6xl mx-auto px-2 py-12">
+      <section className="max-w-6xl mx-auto px-8 py-12">
         <p className="text-gray-500 uppercase font-semibold text-sm mb-4">
           How It Works
         </p>
