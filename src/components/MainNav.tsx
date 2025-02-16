@@ -142,12 +142,12 @@ export default function MainNav() {
           >
             Contact Us
           </Link>
-          <button
+          <Link
+            href="/auth/register"
             className="bg-white text-red-600 px-4 py-2 border border-red-600 rounded-md hover:bg-red-600"
-            onClick={toggleMobileMenu}
           >
             Sign up
-          </button>
+          </Link>
           <span className="text-red-500 cursor-pointer text-xl">EN ▾</span>
         </div>
       )}

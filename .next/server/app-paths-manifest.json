@@ -7,5 +7,6 @@
   "/how-it-works/page": "app/how-it-works/page.js",
   "/contact-us/page": "app/contact-us/page.js",
   "/auth/login/page": "app/auth/login/page.js",
-  "/auth/otp/page": "app/auth/otp/page.js"
+  "/auth/otp/page": "app/auth/otp/page.js",
+  "/auth/forgotPassword/page": "app/auth/forgotPassword/page.js"
 }

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Login() {
   return (
     <div className="flex h-screen flex-col md:flex-row">
-      <div className="flex flex-col p-10 w-full md:w-1/2 px-4 md:px-10 bg-green-50 md:bg-transparent">
+      <div className="flex flex-col p-10 w-full md:w-1/2 px-4 md:px-10 bg-white md:bg-transparent">
         <div className="flex justify-center md:mt-0 sm:mt-8 md:justify-start">
           <Link href="/">
             <img
