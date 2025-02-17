@@ -50,16 +50,16 @@ export default function MainCallToAction() {
                 </select>
               </div>
 
-<div className="mb-4">
-  <label className="block text-gray-700 font-medium">
-    Additional information <span className="text-red-500">*</span>
-  </label>
-  <textarea
-    rows={4}
-    placeholder="Message"
-    className="w-full border border-gray-300 rounded-lg px-4 bg-red-100 py-2 mt-1 focus:ring-red-500"
-  ></textarea>
-</div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium">
+                  Additional information <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  rows={4}
+                  placeholder="Message"
+                  className="w-full border border-gray-300 rounded-lg px-4 bg-red-100 py-2 mt-1 focus:ring-red-500"
+                ></textarea>
+              </div>
 
               <button
                 type="submit"
@@ -80,7 +80,9 @@ export default function MainCallToAction() {
               <i className="bx bx-envelope text-2xl text-red-600"></i>
               <div>
                 <span className="text-gray-700 text-sm">Send an email</span>
-                <p className="text-gray-900 text-sm font-semibold">adflow@gmail.com</p>
+                <p className="text-gray-900 text-sm font-semibold">
+                  adflow@gmail.com
+                </p>
               </div>
             </li>
 
@@ -88,7 +90,9 @@ export default function MainCallToAction() {
               <i className="bx bx-phone text-2xl text-red-600"></i>
               <div>
                 <span className="text-gray-700 text-sm">Give us a call</span>
-                <p className="text-gray-900 text-sm font-semibold">0700000000</p>
+                <p className="text-gray-900 text-sm font-semibold">
+                  0700000000
+                </p>
               </div>
             </li>
 

@@ -1,12 +1,14 @@
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
+// import { useSelector } from "react-redux";
 
 export default function MainNav() {
   const [loading, setLoading] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  // const user = useSelector((state) => state.user.username);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -93,10 +95,18 @@ export default function MainNav() {
         </div>
 
         <Link href="/auth/register">
-          <div className="bg-white text-red-600 px-4 py-2 mr-8 border border-red-600 rounded-md hover:text-white hover:bg-red-600">
-            Sign up
-          </div>
-        </Link>
+            <div className="bg-white text-red-600 px-4 py-2 mr-8 border border-red-600 rounded-md hover:text-white hover:bg-red-600">
+              Sign up
+            </div>
+          </Link>
+
+        {/* {user ? (
+          <Link href="/user/profile">
+            <i className="bx bxs-user-circle text-xl"></i> // User icon
+          </Link>
+        ) : (
+
+        )} */}
         <span className="text-black">EN ▾</span>
       </div>
 

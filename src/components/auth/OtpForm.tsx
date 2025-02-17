@@ -4,14 +4,16 @@ import { useState, ChangeEvent, FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
+// import { useDispatch } from 'react-redux';
+// import { User } from '../types';
 
-export default function LoginForm() {
+export default function OtpForm() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    otp: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
+  // const dispatch = useDispatch();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -35,7 +37,7 @@ export default function LoginForm() {
         headers["api-key"] = apiKey;
       }
 
-      const response = await fetch("/api/auth/otp", {
+      const response = await fetch("/api/auth/verify-otp", {
         method: "POST",
         headers,
         body: JSON.stringify(formData),
@@ -43,14 +45,20 @@ export default function LoginForm() {
 
       if (!response.ok) {
         const message = await response.text();
-        Swal.fire("Failed to login", message, "error");
+        Swal.fire("Failed to verify", message, "error");
       } else {
-        Swal.fire(
-          "Login successful!",
-          "You will be redirected to the homepage.",
-          "success"
-        ).then(() => {
-          router.push("/");
+        // const data: { user: User } = await response.json();
+        const data = await response.json(); 
+        // dispatch(setUser(data.user)); 
+        Swal.fire("OTP Verified!", "You will be redirected shortly.", "success").then(() => {
+          // Redirect based on role
+          if (data.user.role.title === "Media House") {
+            router.push("http://203.29.5173");
+          } else if (data.user.role.title === "Advertiser") {
+            router.push("http://202.393");
+          } else {
+            router.push("/");
+          }
         });
       }
     } catch (error) {
@@ -71,15 +79,15 @@ export default function LoginForm() {
   return (
     <form className="w-full max-w-sm space-y-6" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="email" className="block text-black text-sm">
+        <label htmlFor="otp" className="block text-black text-sm">
           OTP
         </label>
         <input
-          type="email"
-          id="email"
+          type="text"
+          id="otp"
           className="w-full mt-1 px-4 py-2 border border-gray-300 bg-white rounded-lg shadow-sm"
           placeholder="XXXXXX"
-          value={formData.email}
+          value={formData.otp}
           onChange={handleChange}
         />
       </div>
