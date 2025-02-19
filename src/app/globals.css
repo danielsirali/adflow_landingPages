@@ -22,14 +22,14 @@
 }
 
 @font-face {
-  font-family: "SF Pro";
+  font-family: "SF Pro Bold";
   src: url("/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight: 700; /* Bold */
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro";
+  font-family: "SF Pro Italic";
   src: url("/fonts/SFPRODISPLAYBLACKITALIC.OTF") format("opentype");
   font-weight: 900; /* Black */
   font-style: italic;
@@ -38,7 +38,7 @@
 
 html, body {
   font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --primary-color: #037073;
+  --primary-color: black;
   --secondary-color: #FBBF24;
   color: var(--primary-color);
 }
@@ -48,7 +48,7 @@ input, button, select, textarea {
   background-color: white;
   border: 1px solid var(--primary-color);
   padding: 0.5rem 1rem;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 input:focus, button:focus, select:focus, textarea:focus {
@@ -56,12 +56,10 @@ input:focus, button:focus, select:focus, textarea:focus {
   box-shadow: 0 0 0 2px var(--primary-color);
 }
 
-a {
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--secondary-color);
+.swal2-confirm {
+  background-color: #FDDCDF !important; /* Red background for confirm button */
+  color: white !important; /* Ensuring text color is white */
+  height: 40px;
 }
 
 /* Remove autofill background color */

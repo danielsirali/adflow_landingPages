@@ -43,19 +43,19 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-10 relative z-10">
-        <div className="text-2xl font-bold lg:ml-24">
+      <nav className="flex max-w-6xl mx-auto justify-between items-center px-10 relative z-10">
+        <div className="text-2xl font-bold ">
           <div className="w-full py-4">
             <img
               src="/images/adflow_logo.png"
               alt="Adflow Logo"
-              className="w-28 py-4 object-cover"
+              className="w-32 py-4 object-cover"
             />
           </div>
         </div>
 
         <div className="flex justify-between items-center text-bold space-x-10 text-white text-sm hidden md:flex">
-          <div className="flex space-x-16 mr-20 font-bold text-sm">
+          <div className="flex space-x-16 font-bold text-sm">
             <Link
               href="/"
               className={`relative px-4 flex flex-row items-center focus:outline-none ${
@@ -67,7 +67,7 @@ export default function Nav() {
             >
               Home
             </Link>
-            <Link href="about-us" className="hover:text-black text-white">
+            <Link href="about-us" className="hover:text-black text-black">
               About Us
             </Link>
             <Link href="/how-it-works" className="hover:text-black text-white">

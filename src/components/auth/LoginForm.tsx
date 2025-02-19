@@ -46,9 +46,6 @@ export default function LoginForm() {
         Swal.fire("Failed to login", message, "error");
       } else {
         router.push("/auth/otp");
-        // Swal.fire("Login successful!", "You will be redirected to the homepage.", "success").then(() => {
-        //   router.push("/auth/otp");
-        // });
       }
     } catch (error) {
       if (error instanceof Error) {
@@ -64,7 +61,7 @@ export default function LoginForm() {
   return (
     <form className="w-full max-w-sm space-y-6" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="email" className="block text-sm">
+        <label htmlFor="email" className="block text-sm text-black">
           Email
         </label>
         <input
@@ -78,7 +75,7 @@ export default function LoginForm() {
       </div>
 
       <div>
-        <label htmlFor="password" className="block  text-sm">
+        <label htmlFor="password" className="block text-black text-sm">
           Password
         </label>
         <input
@@ -98,7 +95,7 @@ export default function LoginForm() {
 
       <button
         type="submit"
-        className="w-full py-1 bg-[#F20519] border border-[#F20519] text-white rounded-lg shadow-md hover:bg-black"
+        className="w-full py-1 text-sm bg-[#FDDCDF] border-[#FDDCDF] border text-[#F20519] rounded-lg shadow-md hover:bg-[#F20519] hover:text-white"
         disabled={isSubmitting}
       >
         Log In
