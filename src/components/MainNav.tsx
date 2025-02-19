@@ -95,10 +95,10 @@ export default function MainNav() {
         </div>
 
         <Link href="/auth/register">
-            <div className="bg-white text-red-600 px-4 py-2 mr-8 border border-red-600 rounded-md hover:text-white hover:bg-red-600">
-              Sign up
-            </div>
-          </Link>
+          <div className="bg-white text-red-600 px-4 py-2 mr-8 border border-red-600 rounded-md hover:text-white hover:bg-red-600">
+            Sign up
+          </div>
+        </Link>
 
         {/* {user ? (
           <Link href="/user/profile">

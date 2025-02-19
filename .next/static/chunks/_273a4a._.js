@@ -149,7 +149,7 @@ function MainNav() {
                         }, void 0, false, {
                             fileName: "[project]/src/components/MainNav.tsx",
                             lineNumber: 98,
-                            columnNumber: 13
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/MainNav.tsx",

@@ -71,17 +71,19 @@ const Home = () => {
       <section className="relative">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6">
           <div className="md:w-1/2">
-            <h1 className="text-6xl font-bold leading-tight text-black text-center md:text-left">
+            <h1 className="text-6xl font-bold leading-tight text-black md:text-left">
               Run <span className="text-red-500">ads</span> your <br />
               <span className="text-red-500">audience</span> cares about
             </h1>
             <p className="mt-4 text-gray-600 text-sm">
-              Adflow is your all-in-one marketplace for buying and selling
-              airtime on radio and television. Whether you're an advertiser
-              eager to connect with your ideal audience or a media house looking
-              to optimize your inventory, Adflow simplifies the process—helping
-              you focus on what truly matters: reaching your target faster and
-              smarter.
+              <span className="font-[800]">
+                Adflow is your all-in-one marketplace for buying and selling
+                airtime on radio and television.
+              </span>{" "}
+              Whether you're an advertiser eager to connect with your ideal
+              audience or a media house looking to optimize your inventory,
+              Adflow simplifies the process—helping you focus on what truly
+              matters: reaching your target faster and smarter.
             </p>
             <button className="mt-6 h-10 bg-red-500 text-sm text-white flex items-center justify-center border border-red-600 px-6 py-3 rounded-md font-bold hover:bg-red-600 mx-auto lg:mx-0">
               Get Started

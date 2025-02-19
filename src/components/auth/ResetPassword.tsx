@@ -16,7 +16,7 @@ export default function ResetForm() {
       </div>
       <button
         type="submit"
-        className="w-full py-1 bg-red-500 text-white rounded-lg boreder border-red-500 hover:bg-black"
+        className="w-full py-1 text-sm bg-[#FDDCDF] border-[#FDDCDF] border text-[#F20519] rounded-lg shadow-md hover:bg-[#F20519] hover:text-white"
       >
         Submit
       </button>
