@@ -90,9 +90,9 @@ function RegisterForm() {
                 const headers = {
                     "Content-Type": "application/json"
                 };
-                const apiKey = ("TURBOPACK compile-time value", "e18d5c7000ca249fad54b480baef48d13480411cc9d83fbcbf7f1bcb4ca534d7");
+                const apiKey = ("TURBOPACK compile-time value", "rEBbykT8y7JN9ioemus/0LpadHkX99e6DIislhRmuDc=");
                 if ("TURBOPACK compile-time truthy", 1) {
-                    headers["api-key"] = apiKey;
+                    headers["x-api-key"] = apiKey;
                 }
                 const response = await fetch("/api/account-types", {
                     method: "GET",
@@ -113,7 +113,7 @@ function RegisterForm() {
                 const headers = {
                     "Content-Type": "application/json"
                 };
-                const apiKey = ("TURBOPACK compile-time value", "e18d5c7000ca249fad54b480baef48d13480411cc9d83fbcbf7f1bcb4ca534d7");
+                const apiKey = ("TURBOPACK compile-time value", "rEBbykT8y7JN9ioemus/0LpadHkX99e6DIislhRmuDc=");
                 if ("TURBOPACK compile-time truthy", 1) {
                     headers["api-key"] = apiKey;
                 }
@@ -128,8 +128,8 @@ function RegisterForm() {
                     })
                 });
                 if (!response.ok) {
-                    const message = await response.text();
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sweetalert2$2f$dist$2f$sweetalert2$2e$esm$2e$all$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].fire("Failed to register", message, "error");
+                    const message = await response.json();
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sweetalert2$2f$dist$2f$sweetalert2$2e$esm$2e$all$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].fire("Failed to register", message.message, "error");
                 } else {
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sweetalert2$2f$dist$2f$sweetalert2$2e$esm$2e$all$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].fire("Registration successful!", "You will be redirected to the login page.", "success").then(()=>{
                         router.push("/auth/login");

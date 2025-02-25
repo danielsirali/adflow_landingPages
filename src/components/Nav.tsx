@@ -67,7 +67,7 @@ export default function Nav() {
             >
               Home
             </Link>
-            <Link href="about-us" className="hover:text-black text-black">
+            <Link href="about-us" className="hover:text-black text-white">
               About Us
             </Link>
             <Link href="/how-it-works" className="hover:text-black text-white">

@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { useState, useEffect, FormEvent } from "react";
 import Link from "next/link";
@@ -35,7 +35,7 @@ export default function OtpForm() {
     try {
       const headers = {
         "Content-Type": "application/json",
-        "api-key": process.env.NEXT_PUBLIC_API_KEY || "",
+        "x-api-key": process.env.NEXT_PUBLIC_API_KEY || "",
       };
 
       const response = await fetch("/api/auth/verify-otp", {
@@ -57,14 +57,13 @@ export default function OtpForm() {
           const roleTitle = data.user?.role?.title;
 
           if (roleTitle === "Media House") {
-            router.push("http://209.38.120.126:5174");
+            router.push("http://46.101.91.153:5174");
           } else if (roleTitle === "Advertiser") {
-            router.push("http://209.38.120.126:5173");
+            router.push("http://46.101.91.153:5173");
           } else {
             router.push("/");
           }
         });
-        
       }
     } catch (error: any) {
       Swal.fire({
@@ -93,10 +92,14 @@ export default function OtpForm() {
       </div>
       <div className="text-center">
         {counter > 0 ? (
-          <span className="text-sm flex justify-end">Resend in {counter} seconds</span>
+          <span className="text-sm flex justify-end">
+            Resend in {counter} seconds
+          </span>
         ) : (
           <Link href="#" onClick={() => setCounter(30)}>
-            <p className="text-sm flex text-red-500 justify-end underline">Request again</p>
+            <p className="text-sm flex text-red-500 justify-end underline">
+              Request again
+            </p>
           </Link>
         )}
       </div>

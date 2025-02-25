@@ -32,7 +32,7 @@ export default function LoginForm() {
 
       const apiKey = process.env.NEXT_PUBLIC_API_KEY;
       if (apiKey) {
-        headers["api-key"] = apiKey;
+        headers["x-api-key"] = apiKey;
       }
 
       const response = await fetch("/api/auth/signin", {
@@ -42,8 +42,8 @@ export default function LoginForm() {
       });
 
       if (!response.ok) {
-        const message = await response.text();
-        Swal.fire("Failed to login", message, "error");
+        const message = await response.json();
+        Swal.fire("Failed to login", message.message, "error");
       } else {
         router.push("/auth/otp");
       }

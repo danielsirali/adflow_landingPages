@@ -986,6 +986,10 @@ img, video {
   line-height: 1rem;
 }
 
+.font-\[800\] {
+  font-weight: 800;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1000,10 +1004,6 @@ img, video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-\[800\] {
-  font-weight: 800;
 }
 
 .uppercase {
